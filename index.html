@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的文件分享</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+           background: #0f1117; color: #e2e8f0; min-height: 100vh; }
+    header { background: linear-gradient(135deg,#1a1f2e 0%,#0f1117 100%);
+             border-bottom:1px solid #2d3748; padding:24px 32px;
+             display:flex; align-items:center; gap:16px; }
+    header .icon { width:48px; height:48px;
+                   background:linear-gradient(135deg,#667eea,#764ba2);
+                   border-radius:12px; display:flex;
+                   align-items:center; justify-content:center; font-size:24px; }
+    header h1 { font-size:22px; font-weight:700; color:#fff; }
+    header p  { font-size:13px; color:#718096; margin-top:2px; }
+    .meta-bar { padding:12px 32px; background:#1a1f2e;
+                border-bottom:1px solid #2d3748; font-size:13px; color:#718096;
+                display:flex; gap:24px; }
+    .meta-bar strong { color:#a0aec0; }
+    main { padding:32px; max-width:960px; margin:0 auto; }
+    h2 { font-size:13px; text-transform:uppercase; letter-spacing:1px;
+         color:#718096; margin-bottom:16px; }
+    .file-grid { display:grid;
+                 grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+                 gap:16px; }
+    .file-card { background:#1a1f2e; border:1px solid #2d3748;
+                 border-radius:12px; padding:20px;
+                 display:flex; flex-direction:column; gap:12px;
+                 transition:all .2s; }
+    .file-card:hover { border-color:#667eea; background:#1e2535;
+                       transform:translateY(-2px);
+                       box-shadow:0 8px 24px rgba(102,126,234,.15); }
+    .file-top { display:flex; align-items:center; gap:12px; }
+    .file-icon { width:44px; height:44px; border-radius:10px;
+                 display:flex; align-items:center; justify-content:center;
+                 font-size:22px; flex-shrink:0; }
+    .icon-html { background:#ff6b3520; }
+    .icon-pptx { background:#ff4e5020; }
+    .icon-pdf  { background:#fc887220; }
+    .icon-img  { background:#38b2ac20; }
+    .icon-docx { background:#3182ce20; }
+    .icon-xlsx { background:#38a16920; }
+    .icon-zip  { background:#d69e2e20; }
+    .icon-file { background:#71809620; }
+    .file-name { font-size:14px; font-weight:600; color:#e2e8f0;
+                 word-break:break-all; line-height:1.4; }
+    .file-info { display:flex; justify-content:space-between;
+                 font-size:12px; color:#718096; }
+    .file-size { background:#2d3748; padding:2px 8px;
+                 border-radius:20px; font-size:11px; color:#a0aec0; }
+    .btn-download { display:flex; align-items:center; justify-content:center;
+                    gap:6px; padding:9px 0;
+                    background:linear-gradient(135deg,#667eea,#764ba2);
+                    border-radius:8px; font-size:13px; font-weight:600;
+                    color:#fff; text-decoration:none; transition:opacity .2s; }
+    .btn-download:hover { opacity:.85; }
+    .footer { text-align:center; margin-top:48px; font-size:12px; color:#4a5568; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="icon">&#128193;</div>
+  <div>
+    <h1>我的文件分享</h1>
+    <p>桌面文件远程访问</p>
+  </div>
+</header>
+<div class="meta-bar">
+  <span><strong>0</strong> 个文件</span>
+  <span>最后同步：<strong>2026-03-17 13:25:36</strong></span>
+</div>
+<main>
+  <h2>&#128193; 文件列表</h2>
+  <div class="file-grid">
+
+  </div>
+  <p class="footer">自动同步时间：2026-03-17 13:25:36 &nbsp;·&nbsp; 由 WorkBuddy 每小时自动更新</p>
+</main>
+</body>
+</html>
